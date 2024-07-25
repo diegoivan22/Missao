@@ -6,18 +6,38 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas1 = [
     {
-    enunciado: "Pergunta 1",
-    alternativas: [
+        enunciado: "Cristiano Ronaldo é melhor que o Messi?",
+        alternativas: [
+        "clao!!!",
+        "Obviamente!!!"
+        ]
+    },
+    {
+        enunciado: "Pergunta 1",
+        alternativas: [
         "alternativa 1",
         "alternativa 2"
-    ]
-},
-{
-    enunciado: "Pergunta 1",
-    alternativas: [
+        ]
+    },
+    {
+        enunciado: "Pergunta 1",
+        alternativas: [
         "alternativa 1",
         "alternativa 2"
-    ]
-}
-
-     ]
+        ]
+    },
+    {
+        enunciado: "Pergunta 1",
+        alternativas: [
+        "alternativa 1",
+        "alternativa 2"
+        ]
+    },
+    {
+        enunciado: "Pergunta 1",
+        alternativas: [
+        "alternativa 1",
+        "alternativa 2"
+        ]
+    },
+];
