@@ -8,36 +8,58 @@ const perguntas1 = [
     {
         enunciado: "Cristiano Ronaldo é melhor que o Messi?",
         alternativas: [
-        "clao!!!",
+            {
+                texto: "claro!!!",
+            }
+        
         "Obviamente!!!"
         ]
     },
     {
-        enunciado: "Pergunta 1",
+        enunciado: "Neymar é mídia?",
         alternativas: [
-        "alternativa 1",
-        "alternativa 2"
+        "Sim, Neymar é zika",
+        "Não, Neymar é paia"
         ]
     },
     {
-        enunciado: "Pergunta 1",
+        enunciado: "Do you like to play footboll?",
         alternativas: [
-        "alternativa 1",
-        "alternativa 2"
+        "Yes",
+        "No"
         ]
     },
     {
-        enunciado: "Pergunta 1",
+        enunciado: "Neymal melhor do mundo?",
         alternativas: [
-        "alternativa 1",
-        "alternativa 2"
+        "Sim!!!!!",
+        "Claro!!!!!"
         ]
     },
     {
-        enunciado: "Pergunta 1",
+        enunciado: "Cistiano de bicicleta ......",
         alternativas: [
-        "alternativa 1",
-        "alternativa 2"
+        "Minha nossaaaaaa!!!!!!!",
+        "Meu Deussssss!!!!!!!!!"
         ]
     },
 ];
+
+let atual = 0;
+let perguntaAtual;
+
+function mostraPergunta() {
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+    mostraAlternativas();
+}
+
+function mostraAlternativas(); {
+    for(const alternativa of perguntaAtual.alternativas){
+        const botaoAlternativas = document.createElement("button");
+        botaoAlternativas.textContent = alternativa;
+        caixaAlternativas.appendChild(botaoAlternativas);
+    }
+}
+
+mostraPergunta();
