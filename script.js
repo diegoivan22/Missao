@@ -9,38 +9,70 @@ const perguntas1 = [
         enunciado: "Cristiano Ronaldo é melhor que o Messi?",
         alternativas: [
             {
-                texto: "claro!!!",
+                texto: "claro!!!"
+                afirmacao: "afirmacao"
             }
-        
-        "Obviamente!!!"
+            {
+                texto: "Obviamente!!!"
+                afirmacao: "afirmacao"
+            }
+
         ]
     },
     {
         enunciado: "Neymar é mídia?",
         alternativas: [
-        "Sim, Neymar é zika",
-        "Não, Neymar é paia"
+            {
+                texto: "Sim, Neymar é zika",
+                afirmacao: "afirmacao"
+            }
+            {
+                texto: "Não, Neymar é paia"
+                afirmacao: "afirmacao"
+            }
+              
         ]
     },
     {
         enunciado: "Do you like to play footboll?",
         alternativas: [
-        "Yes",
-        "No"
+            {
+                texto: "Yes",
+                afirmacao: "afirmacao"
+            }
+            {
+                texto: "No"
+                afirmacao: "afirmacao"
+            }
+               
         ]
     },
     {
-        enunciado: "Neymal melhor do mundo?",
+        enunciado: "Neymar melhor do mundo?",
         alternativas: [
-        "Sim!!!!!",
-        "Claro!!!!!"
+            {
+                texto: "Sim!!!!!",
+                afirmacao: "afirmacao"
+            }
+            {
+                texto:  "Claro!!!!!"
+                afirmacao: "afirmacao"
+            }
+       
         ]
     },
     {
         enunciado: "Cistiano de bicicleta ......",
         alternativas: [
-        "Minha nossaaaaaa!!!!!!!",
-        "Meu Deussssss!!!!!!!!!"
+            {
+                texto: "Minha nossaaaaaa!!!!!!!",
+                afirmacao: "afirmacao"
+            }
+            {
+                texto: "Meu Deussssss!!!!!!!!!"
+                afirmacao: "afirmacao"
+            }
+             
         ]
     },
 ];
@@ -57,7 +89,7 @@ function mostraPergunta() {
 function mostraAlternativas(); {
     for(const alternativa of perguntaAtual.alternativas){
         const botaoAlternativas = document.createElement("button");
-        botaoAlternativas.textContent = alternativa;
+        botaoAlternativas.textContent = alternativa.texto;
         caixaAlternativas.appendChild(botaoAlternativas);
     }
 }
